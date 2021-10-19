@@ -1,0 +1,6 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+
+<p><%= link_to "Edit Article", articles_edit_path()%></p>
+<p><%= link_to "Delete Article", article_path(@article), method: :delete%></p>
+<p><%= link_to "Go back", articles_path()%></p>
